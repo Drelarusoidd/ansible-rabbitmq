@@ -1,5 +1,6 @@
 ---
 
 - include: rabbitmq.yml
+  become: true
   when: rabbitmq_enabled
   tags: [rabbitmq]
